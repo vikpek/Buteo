@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - ThermalColumn
+  - HeightValue
+  - RisingValue
+  - Buzzard
   layers:
   - Default
   - TransparentFX

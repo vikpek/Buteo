@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
+using UnityStandardAssets.Vehicles.Aeroplane;
 
 public class BuzzardController : MonoBehaviour {
 
@@ -42,7 +43,12 @@ public class BuzzardController : MonoBehaviour {
 		{
 			currentConstantForceY += thermalColumnCache[i].GetComponent<ThermalColumnController>().ThermalImpact;
 		}
-		GetComponent<ConstantForce>().force.Set(0f, currentConstantForceY, 0f);
-		Debug.Log ("Current Y-Force: " + currentConstantForceY);
+		GetComponent<AeroplaneController>().m_Lift = currentConstantForceY;
+	}
+
+	public float CurrentConstantForceY {
+		get {
+			return this.currentConstantForceY;
+		}
 	}
 }

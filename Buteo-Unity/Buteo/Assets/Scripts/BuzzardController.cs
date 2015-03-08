@@ -52,6 +52,10 @@ public class BuzzardController : MonoBehaviour
 	[SerializeField] 
 	private float
 		m_MinimumThrottle = 0.7f;
+	[SerializeField] 
+	private float
+		m_MaximumSpeed = 30f;
+
 
 	public float Altitude { get; private set; }                     // The aeroplane's height above the ground.
 	public float Throttle { get; private set; }                     // The amount of throttle being used.
@@ -109,11 +113,20 @@ public class BuzzardController : MonoBehaviour
 		RollInput = rollInput;
 		PitchInput = pitchInput;
 		YawInput = yawInput;
-		if (throttleInput < m_MinimumThrottle) {
-			ThrottleInput = m_MinimumThrottle;
-		} else {
-			ThrottleInput = throttleInput;
+//		if (throttleInput < m_MinimumThrottle) {
+//			ThrottleInput = m_MinimumThrottle;
+//		} else {
+//			ThrottleInput = throttleInput;
+//		}
+
+		if( m_Rigidbody.rotation.x < 0f)
+		{
+			ThrottleInput = -1f;
+		}else {
+			ThrottleInput = Mathf.Abs(m_Rigidbody.rotation.x);
 		}
+
+
 
 		AirBrakes = airBrakes;
 			
@@ -202,6 +215,11 @@ public class BuzzardController : MonoBehaviour
 			
 		// Adjust throttle based on throttle input (or immobilized state)
 		Throttle = Mathf.Clamp01 (Throttle + ThrottleInput * Time.deltaTime * m_ThrottleChangeSpeed);
+
+		if(ForwardSpeed > m_MaximumSpeed)
+		{
+			Throttle = 0f;
+		}
 			
 		// current engine power is just:
 		EnginePower = Throttle * m_MaxEnginePower;

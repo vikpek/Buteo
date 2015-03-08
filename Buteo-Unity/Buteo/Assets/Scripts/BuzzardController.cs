@@ -119,11 +119,11 @@ public class BuzzardController : MonoBehaviour
 //			ThrottleInput = throttleInput;
 //		}
 
-		if( m_Rigidbody.rotation.x < 0f)
+		if( PitchAngle < 0f)
 		{
 			ThrottleInput = -1f;
 		}else {
-			ThrottleInput = Mathf.Abs(m_Rigidbody.rotation.x);
+			ThrottleInput = Mathf.Abs(PitchAngle * 2);
 		}
 
 
@@ -220,6 +220,8 @@ public class BuzzardController : MonoBehaviour
 		{
 			Throttle = 0f;
 		}
+
+
 			
 		// current engine power is just:
 		EnginePower = Throttle * m_MaxEnginePower;

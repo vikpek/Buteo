@@ -30,7 +30,7 @@ public class UIController : MonoBehaviour
 			"ForwardSpeed: " + buzzardController.ForwardSpeed + "\n" +
 			"ThrottleInput: " + buzzardController.ThrottleInput + "\n" +
 			"Throttle: " + buzzardController.Throttle + "\n" +
-			"Pitch Angle: " + buzzardController.GetComponent<Rigidbody>().rotation.x + "\n" +
+			"Pitch Angle: " + buzzardController.PitchAngle + "\n" +
 			"";
 	}
 }

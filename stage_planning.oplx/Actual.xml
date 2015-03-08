@@ -59,6 +59,8 @@
     <type>group</type>
     <child-task idref="t1"/>
     <child-task idref="t5"/>
+    <child-task idref="t37"/>
+    <child-task idref="t39"/>
     <child-task idref="t23"/>
   </task>
   <task id="t1">
@@ -83,7 +85,8 @@
   </task>
   <task id="t4">
     <title>Thermal column functionality</title>
-    <effort>28800</effort>
+    <effort>3600</effort>
+    <effort-done>3600</effort-done>
     <prerequisite-task idref="t3"/>
   </task>
   <task id="t5">
@@ -199,22 +202,49 @@
   </task>
   <task id="t31">
     <title>Straight Gliding</title>
-    <effort>14400</effort>
+    <effort>3600</effort>
+    <effort-done>3600</effort-done>
   </task>
   <task id="t32">
     <title>Rolling left/right</title>
-    <effort>14400</effort>
+    <effort>3600</effort>
+    <effort-done>3600</effort-done>
     <prerequisite-task idref="t31"/>
   </task>
   <task id="t33">
     <title>Pitching</title>
-    <effort>14400</effort>
+    <effort>3600</effort>
+    <effort-done>3600</effort-done>
     <prerequisite-task idref="t32"/>
   </task>
   <task id="t35">
     <title>Soaring</title>
-    <effort>14400</effort>
+    <effort>3600</effort>
+    <effort-done>3600</effort-done>
     <prerequisite-task idref="t33"/>
+  </task>
+  <task id="t37">
+    <title>SFX</title>
+    <type>group</type>
+    <child-task idref="t38"/>
+    <child-task idref="t41"/>
+  </task>
+  <task id="t38">
+    <title>Wind Sounds</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t39">
+    <title>Music</title>
+    <type>group</type>
+    <child-task idref="t40"/>
+  </task>
+  <task id="t40">
+    <title>Gameplay sound</title>
+    <effort>28800</effort>
+  </task>
+  <task id="t41">
+    <title>Buzzard Sounds</title>
+    <effort>28800</effort>
   </task>
   <critical-path root="-1" enabled="false" resources="false">
     <color r="1" g="0.5" b="0.5"/>

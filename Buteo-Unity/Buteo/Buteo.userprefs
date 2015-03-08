@@ -1,17 +1,17 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/UIController.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BuzzardController.cs">
     <Files>
       <File FileName="Assets/Scripts/Tags.cs" Line="6" Column="2" />
-      <File FileName="Assets/Scripts/UIController.cs" Line="22" Column="182" />
-      <File FileName="Assets/Scripts/BuzzardController.cs" Line="121" Column="10" />
+      <File FileName="Assets/Scripts/UIController.cs" Line="32" Column="45" />
+      <File FileName="Assets/Scripts/BuzzardController.cs" Line="221" Column="18" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Assembly-CSharp" expanded="True">
             <Node name="Scripts" expanded="True">
-              <Node name="UIController.cs" selected="True" />
+              <Node name="BuzzardController.cs" selected="True" />
             </Node>
           </Node>
           <Node name="Assembly-CSharp-firstpass" expanded="True">

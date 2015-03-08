@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<changelog xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2">
+  <version>2.1</version>
+  <task-change-set user="Viktor Pekar" date="2015-03-08T10:10:34.993Z" timestamp="2015-03-08T10:10:34.993Z">
+    <change idref="t5" to="t-1" to-position="1" resolved="yes">
+      <change idref="t5" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t5" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t5" attribute="title" type="string" to="Art"/>
+    </change>
+    <change idref="t1" attribute="isGroup" type="real" from="0" to="1" resolved="yes"/>
+    <change idref="t1" attribute="isSplittableTask" type="real" from="1" resolved="yes"/>
+    <change idref="t1" attribute="taskType" type="real" from="0" to="2" resolved="yes"/>
+    <change idref="t1" attribute="title" type="string" from="Task 1" to="Code" resolved="yes"/>
+    <change idref="t1" attribute="resourceAssignmentType" type="real" from="0" resolved="yes"/>
+    <change idref="t1" attribute="staticCost" type="real" from="0" resolved="yes"/>
+    <change idref="t1" attribute="effort" type="real" from="28800" resolved="yes"/>
+    <change idref="t1" attribute="isSplitChunk" type="real" from="0" resolved="yes"/>
+    <change idref="t1" attribute="scheduleType" type="real" from="0" resolved="yes"/>
+    <change idref="t1" attribute="internalAssignments" type="string" from="" resolved="yes"/>
+    <change idref="t1" attribute="isSplitTask" type="real" from="0" resolved="yes"/>
+    <change idref="t1" attribute="internalEffortDone" type="real" from="0" resolved="yes"/>
+    <change idref="t2" to="t1" to-position="0" resolved="yes">
+      <change idref="t2" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t2" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t2" attribute="title" type="string" to="Prototype - Proof of Fun"/>
+    </change>
+    <change idref="t6" to="t5" to-position="0" resolved="yes">
+      <change idref="t6" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t6" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t6" attribute="title" type="string" to="Buzzard"/>
+    </change>
+    <change idref="t7" to="t6" to-position="0" resolved="yes">
+      <change idref="t7" attribute="title" type="string" to="Buzzard blockout"/>
+    </change>
+    <change idref="t8" to="t6" to-position="1" resolved="yes">
+      <change idref="t8" attribute="internalPrerequisitesString" type="string" to="7FS"/>
+      <change idref="t8" attribute="title" type="string" to="Buzzard model"/>
+    </change>
+    <change idref="t9" to="t6" to-position="2" resolved="yes">
+      <change idref="t9" attribute="internalPrerequisitesString" type="string" to="8FS"/>
+      <change idref="t9" attribute="title" type="string" to="Buzzard unwrap"/>
+    </change>
+    <change idref="t10" to="t6" to-position="3" resolved="yes">
+      <change idref="t10" attribute="internalPrerequisitesString" type="string" to="8FS"/>
+      <change idref="t10" attribute="title" type="string" to="Buzzard rig"/>
+    </change>
+    <change idref="t11" to="t6" to-position="4" resolved="yes">
+      <change idref="t11" attribute="internalPrerequisitesString" type="string" to="10FS"/>
+      <change idref="t11" attribute="title" type="string" to="Buzzard animation"/>
+    </change>
+    <change idref="t12" to="t6" to-position="5" resolved="yes">
+      <change idref="t12" attribute="internalPrerequisitesString" type="string" to="9FS"/>
+      <change idref="t12" attribute="title" type="string" to="Buzzard texture"/>
+    </change>
+    <change idref="t3" to="t2" to-position="0" resolved="yes">
+      <change idref="t3" attribute="title" type="string" to="Buzzard movement"/>
+    </change>
+    <change idref="t4" to="t2" to-position="1" resolved="yes">
+      <change idref="t4" attribute="internalPrerequisitesString" type="string" to="3FS"/>
+      <change idref="t4" attribute="title" type="string" to="Thermal column functionality"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="Viktor Pekar" date="2015-03-08T10:14:36.562Z" timestamp="2015-03-08T10:14:36.562Z">
+    <change idref="t23" to="t-1" to-position="2" resolved="yes">
+      <change idref="t23" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t23" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t23" attribute="title" type="string" to="Game Design"/>
+    </change>
+    <change idref="t13" to="t1" to-position="1" resolved="yes">
+      <change idref="t13" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t13" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t13" attribute="title" type="string" to="Prototype 02 - Vertical Slice"/>
+    </change>
+    <change idref="t2" attribute="title" type="string" from="Prototype - Proof of Fun" to="Prototype 01- Proof of Fun" resolved="yes"/>
+    <change idref="t28" to="t27" to-position="0" resolved="yes">
+      <change idref="t28" attribute="title" type="string" to="Thermal flight"/>
+    </change>
+    <change idref="t29" to="t27" to-position="1" resolved="yes">
+      <change idref="t29" attribute="internalPrerequisitesString" type="string" to="28FS"/>
+      <change idref="t29" attribute="title" type="string" to="Long term motivation discussion"/>
+    </change>
+    <change idref="t16" to="t13" to-position="0" resolved="yes">
+      <change idref="t16" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t16" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t16" attribute="title" type="string" to="Gameplay"/>
+    </change>
+    <change idref="t17" to="t13" to-position="1" resolved="yes">
+      <change idref="t17" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t17" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t17" attribute="title" type="string" to="Miscellaneous"/>
+    </change>
+    <change idref="t14" to="t16" to-position="0" resolved="yes">
+      <change idref="t14" attribute="title" type="string" to="Static level"/>
+    </change>
+    <change idref="t15" to="t16" to-position="1" resolved="yes">
+      <change idref="t15" attribute="title" type="string" to="realistic thermal columns"/>
+    </change>
+    <change idref="t18" to="t17" to-position="0" resolved="yes">
+      <change idref="t18" attribute="title" type="string" to="Menu"/>
+    </change>
+    <change idref="t19" to="t17" to-position="1" resolved="yes">
+      <change idref="t19" attribute="title" type="string" to="Game Over"/>
+    </change>
+    <change idref="t25" to="t23" to-position="0" resolved="yes">
+      <change idref="t25" attribute="title" type="string" to="Vision Statement"/>
+    </change>
+    <change idref="t26" to="t23" to-position="1" resolved="yes">
+      <change idref="t26" attribute="internalPrerequisitesString" type="string" to="25FS"/>
+      <change idref="t26" attribute="title" type="string" to="GDD initialization"/>
+    </change>
+    <change idref="t27" to="t23" to-position="2" resolved="yes">
+      <change idref="t27" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t27" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t27" attribute="title" type="string" to="Core features"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="Viktor Pekar" date="2015-03-08T10:15:08.787Z" timestamp="2015-03-08T10:15:08.787Z">
+    <change idref="t13" attribute="internalPrerequisitesString" type="string" to="2FS" resolved="yes"/>
+    <change idref="t15" attribute="internalPrerequisitesString" type="string" to="14FS" resolved="yes"/>
+  </task-change-set>
+  <metadata-change-set user="Viktor Pekar" date="2015-03-08T10:02:58.657Z" timestamp="2015-03-08T10:02:58.657Z">
+    <change idref="m1" attribute="fixedDate" type="date" from="2007-01-01T20:00:00.000Z" to="2015-03-07T23:00:00.000Z" resolved="yes"/>
+  </metadata-change-set>
+</changelog>

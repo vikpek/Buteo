@@ -2,24 +2,31 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class UIController : MonoBehaviour {
+public class UIController : MonoBehaviour
+{
 
 	BuzzardController buzzardController;
+	Text statsField;
 
-	Text heightValue;
-	Text risingValue;
-
-	void Awake()
+	void Awake ()
 	{
-		buzzardController = GameObject.FindGameObjectWithTag(Tags.BUZZARD).GetComponent<BuzzardController>();
+		buzzardController = GameObject.FindGameObjectWithTag (Tags.BUZZARD).GetComponent<BuzzardController> ();
 
-		heightValue = GameObject.FindGameObjectWithTag(Tags.RISING_VALUE).GetComponent<Text>();
-		risingValue = GameObject.FindGameObjectWithTag(Tags.HEIGHT_VALUE).GetComponent<Text>();
+
+		statsField = GameObject.FindGameObjectWithTag (Tags.STATS_FIELD).GetComponent<Text> ();
 	}
 
-	void Update()
+	void Update ()
 	{
-		heightValue.text = buzzardController.transform.position.y + "";
-		risingValue.text = buzzardController.CurrentConstantForceY + "";
+		statsField.text = "" +
+			"Altitude: " + buzzardController.Altitude + "\n" +
+			"Rising: " + buzzardController.CurrentConstantForceY + "\n" +
+			"RollInput: " + buzzardController.RollInput + "\n" +
+			"PitchInput: " + buzzardController.PitchInput + "\n" +
+			"YawInput: " + buzzardController.YawInput + "\n" +
+			"AirBrakes: " + buzzardController.AirBrakes + "\n" +
+			"ForwardSpeed: " + buzzardController.ForwardSpeed + "\n" +
+			"ThrottleInput: " + buzzardController.ThrottleInput + "\n" +
+			"";
 	}
 }

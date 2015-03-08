@@ -19,6 +19,8 @@ public class UIController : MonoBehaviour
 	void Update ()
 	{
 		statsField.text = "" +
+			"Gliding Airspeed: " + buzzardController.GetComponent<Rigidbody>().velocity.magnitude + " m/s \n" +
+			"Vertical Speed: " + buzzardController.GetComponent<Rigidbody>().velocity.y + " m/s \n" +
 			"Altitude: " + buzzardController.Altitude + "\n" +
 			"Rising: " + buzzardController.CurrentConstantForceY + "\n" +
 			"RollInput: " + buzzardController.RollInput + "\n" +

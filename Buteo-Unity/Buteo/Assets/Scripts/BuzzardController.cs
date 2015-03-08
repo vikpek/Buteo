@@ -324,7 +324,7 @@ public class BuzzardController : MonoBehaviour
 		for (int i = 0; i < thermalColumnCache.Length; i++) {
 			currentConstantForceY += thermalColumnCache [i].GetComponent<ThermalColumnController> ().ThermalImpact;
 		}
-		m_Lift = currentConstantForceY;
+		m_Lift = currentConstantForceY/1000;
 	}
 
 	public float CurrentConstantForceY {

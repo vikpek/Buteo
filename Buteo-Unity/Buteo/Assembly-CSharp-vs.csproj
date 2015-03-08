@@ -46,12 +46,12 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Buzzard4AxisControl.cs" />
-     <Compile Include="Assets\BuzzardController.cs" />
+     <Compile Include="Assets\Scripts\Buzzard4AxisControl.cs" />
+     <Compile Include="Assets\Scripts\BuzzardController.cs" />
      <Compile Include="Assets\Scripts\FlightMovementController.cs" />
      <Compile Include="Assets\Scripts\Tags.cs" />
-     <Compile Include="Assets\ThermalColumnController.cs" />
-     <Compile Include="Assets\UIController.cs" />
+     <Compile Include="Assets\Scripts\ThermalColumnController.cs" />
+     <Compile Include="Assets\Scripts\UIController.cs" />
      <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
  <Reference Include="UnityEngine.UI">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

@@ -118,6 +118,38 @@
     <change idref="t13" attribute="internalPrerequisitesString" type="string" to="2FS" resolved="yes"/>
     <change idref="t15" attribute="internalPrerequisitesString" type="string" to="14FS" resolved="yes"/>
   </task-change-set>
+  <task-change-set user="Viktor Pekar" date="2015-03-08T13:30:48.563Z" timestamp="2015-03-08T13:30:48.563Z">
+    <change idref="t3" attribute="isGroup" type="real" from="0" to="1" resolved="yes"/>
+    <change idref="t3" attribute="isSplittableTask" type="real" from="1" resolved="yes"/>
+    <change idref="t3" attribute="taskType" type="real" from="0" to="2" resolved="yes"/>
+    <change idref="t3" attribute="resourceAssignmentType" type="real" from="0" resolved="yes"/>
+    <change idref="t3" attribute="staticCost" type="real" from="0" resolved="yes"/>
+    <change idref="t3" attribute="effort" type="real" from="28800" resolved="yes"/>
+    <change idref="t3" attribute="isSplitChunk" type="real" from="0" resolved="yes"/>
+    <change idref="t3" attribute="scheduleType" type="real" from="0" resolved="yes"/>
+    <change idref="t3" attribute="internalAssignments" type="string" from="" resolved="yes"/>
+    <change idref="t3" attribute="isSplitTask" type="real" from="0" resolved="yes"/>
+    <change idref="t3" attribute="internalEffortDone" type="real" from="0" resolved="yes"/>
+    <change idref="t31" to="t3" to-position="0" resolved="yes">
+      <change idref="t31" attribute="effort" type="real" from="28800" to="14400"/>
+      <change idref="t31" attribute="title" type="string" to="Straight Gliding"/>
+    </change>
+    <change idref="t32" to="t3" to-position="1" resolved="yes">
+      <change idref="t32" attribute="effort" type="real" from="28800" to="14400"/>
+      <change idref="t32" attribute="internalPrerequisitesString" type="string" to="31FS"/>
+      <change idref="t32" attribute="title" type="string" to="Rolling left/right"/>
+    </change>
+    <change idref="t33" to="t3" to-position="2" resolved="yes">
+      <change idref="t33" attribute="effort" type="real" from="28800" to="14400"/>
+      <change idref="t33" attribute="internalPrerequisitesString" type="string" to="32FS"/>
+      <change idref="t33" attribute="title" type="string" to="Pitching"/>
+    </change>
+    <change idref="t35" to="t3" to-position="3" resolved="yes">
+      <change idref="t35" attribute="effort" type="real" from="28800" to="14400"/>
+      <change idref="t35" attribute="internalPrerequisitesString" type="string" to="33FS"/>
+      <change idref="t35" attribute="title" type="string" to="Soaring"/>
+    </change>
+  </task-change-set>
   <metadata-change-set user="Viktor Pekar" date="2015-03-08T10:02:58.657Z" timestamp="2015-03-08T10:02:58.657Z">
     <change idref="m1" attribute="fixedDate" type="date" from="2007-01-01T20:00:00.000Z" to="2015-03-07T23:00:00.000Z" resolved="yes"/>
   </metadata-change-set>

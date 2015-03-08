@@ -75,7 +75,11 @@
   </task>
   <task id="t3">
     <title>Buzzard movement</title>
-    <effort>28800</effort>
+    <type>group</type>
+    <child-task idref="t31"/>
+    <child-task idref="t32"/>
+    <child-task idref="t33"/>
+    <child-task idref="t35"/>
   </task>
   <task id="t4">
     <title>Thermal column functionality</title>
@@ -192,6 +196,25 @@
     <title>Long term motivation discussion</title>
     <effort>28800</effort>
     <prerequisite-task idref="t28"/>
+  </task>
+  <task id="t31">
+    <title>Straight Gliding</title>
+    <effort>14400</effort>
+  </task>
+  <task id="t32">
+    <title>Rolling left/right</title>
+    <effort>14400</effort>
+    <prerequisite-task idref="t31"/>
+  </task>
+  <task id="t33">
+    <title>Pitching</title>
+    <effort>14400</effort>
+    <prerequisite-task idref="t32"/>
+  </task>
+  <task id="t35">
+    <title>Soaring</title>
+    <effort>14400</effort>
+    <prerequisite-task idref="t33"/>
   </task>
   <critical-path root="-1" enabled="false" resources="false">
     <color r="1" g="0.5" b="0.5"/>

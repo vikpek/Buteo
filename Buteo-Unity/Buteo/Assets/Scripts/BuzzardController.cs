@@ -55,6 +55,9 @@ public class BuzzardController : MonoBehaviour
 	[SerializeField] 
 	private float
 		m_MaximumSpeed = 30f;
+	[SerializeField] 
+	private float
+		m_PitchHorizon = -0.2f;
 
 
 	public float Altitude { get; private set; }                     // The aeroplane's height above the ground.
@@ -113,23 +116,12 @@ public class BuzzardController : MonoBehaviour
 		RollInput = rollInput;
 		PitchInput = pitchInput;
 		YawInput = yawInput;
-//		if (throttleInput < m_MinimumThrottle) {
-//			ThrottleInput = m_MinimumThrottle;
-//		} else {
-//			ThrottleInput = throttleInput;
-//		}
-
-		if( PitchAngle < 0f)
-		{
-			ThrottleInput = -1f;
-		}else {
-			ThrottleInput = Mathf.Abs(PitchAngle * 2);
-		}
-
-
-
 		AirBrakes = airBrakes;
+
+		CalculateThrottleInputAccordingToPitchAngle ();
 			
+		CalculateAirBreaks();
+
 		ClampInputs ();
 			
 		CalculateRollAndPitchAngles ();
@@ -149,6 +141,24 @@ public class BuzzardController : MonoBehaviour
 		CalculateTorque ();
 			
 		CalculateAltitude ();
+	}
+
+	void CalculateAirBreaks ()
+	{
+		if(AirBrakes)
+		{
+			m_Rigidbody.velocity = Vector3.Lerp(m_Rigidbody.velocity, Vector3.zero, 1f);
+		}
+	}
+
+	void CalculateThrottleInputAccordingToPitchAngle ()
+	{
+		if (PitchAngle < m_PitchHorizon) {
+			ThrottleInput = -1f;
+		}
+		else {
+			ThrottleInput = Mathf.Abs (PitchAngle * 2);
+		}
 	}
 		
 	private void ClampInputs ()
@@ -179,6 +189,8 @@ public class BuzzardController : MonoBehaviour
 			RollAngle = Mathf.Atan2 (localFlatRight.y, localFlatRight.x);
 
 		}
+
+//		if(PitchAngle > 
 	}
 		
 	private void AutoLevel ()
@@ -221,8 +233,6 @@ public class BuzzardController : MonoBehaviour
 			Throttle = 0f;
 		}
 
-
-			
 		// current engine power is just:
 		EnginePower = Throttle * m_MaxEnginePower;
 	}

@@ -26,11 +26,15 @@ public class Buzzard4AxisControl : MonoBehaviour
 	private void FixedUpdate()
 	{
 		// Read input for the pitch, yaw, roll and throttle of the aeroplane.
-		float roll = CrossPlatformInputManager.GetAxis("Mouse X");
-		float pitch = CrossPlatformInputManager.GetAxis("Mouse Y");
-		m_AirBrakes = CrossPlatformInputManager.GetButton("Fire1");
-		m_Yaw = CrossPlatformInputManager.GetAxis("Horizontal");
-		m_Throttle = CrossPlatformInputManager.GetAxis("Vertical");
+//		float roll = CrossPlatformInputManager.GetAxis("Mouse X");
+//		float pitch = CrossPlatformInputManager.GetAxis("Mouse Y");
+		m_AirBrakes = CrossPlatformInputManager.GetButton("Submit");
+//		m_Yaw = CrossPlatformInputManager.GetAxis("Horizontal");
+//		m_Throttle = CrossPlatformInputManager.GetAxis("Vertical");
+
+		float roll = CrossPlatformInputManager.GetAxis("Horizontal");
+		float pitch = CrossPlatformInputManager.GetAxis("Vertical");
+
 		#if MOBILE_INPUT
 		AdjustInputForMobileControls(ref roll, ref pitch, ref m_Throttle);
 		#endif

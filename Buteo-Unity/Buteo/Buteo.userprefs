@@ -3,8 +3,10 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/BuzzardController.cs">
     <Files>
       <File FileName="Assets/Scripts/Tags.cs" Line="6" Column="2" />
-      <File FileName="Assets/Scripts/UIController.cs" Line="32" Column="45" />
-      <File FileName="Assets/Scripts/BuzzardController.cs" Line="221" Column="18" />
+      <File FileName="Assets/Scripts/UIController.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/BuzzardController.cs" Line="185" Column="21" />
+      <File FileName="Assets/Standard Assets/Environment/Water (Basic)/Scripts/WaterBasic.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Buzzard4AxisControl.cs" Line="30" Column="62" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -15,7 +17,13 @@
             </Node>
           </Node>
           <Node name="Assembly-CSharp-firstpass" expanded="True">
-            <Node name="Standard Assets" expanded="True" />
+            <Node name="Standard Assets" expanded="True">
+              <Node name="Environment" expanded="True">
+                <Node name="Water (Basic)" expanded="True">
+                  <Node name="Scripts" expanded="True" />
+                </Node>
+              </Node>
+            </Node>
           </Node>
         </State>
       </Pad>
